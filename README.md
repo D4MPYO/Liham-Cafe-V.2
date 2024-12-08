@@ -1,4 +1,9 @@
 # Liham-Cafe-V.2
+
+# Live Preview:
+https://d4mpyo.github.io/Liham-Cafe-V.2/
+
+# Image Preview:
 ![Home Draft UI](https://github.com/user-attachments/assets/801a9b4c-9c01-4285-ad33-bd04c6ee3f7d)
 ![Gallery Draft UI](https://github.com/user-attachments/assets/25e0393b-b9ad-4d66-852f-df8d7c1f24bc)
 ![About Draft UI](https://github.com/user-attachments/assets/ad3c3d47-3104-4902-b689-ba355a1ebeed)
