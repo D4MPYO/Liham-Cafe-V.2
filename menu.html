@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liham Cafe</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <script
+      src="https://kit.fontawesome.com/effd3867de.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- Nav  -->
+    <nav>
+      <a href="" class="logo">
+        <img src="Images/Logooo.png" alt="" />
+        <p>Liham Cafe</p>
+      </a>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <i class="fa-solid fa-user"></i>
+        <i id="menu" class="fa-solid fa-bars"></i>
+      </div>
+
+      <aside class="sidebar">
+        <i id="closeBtn" class="fa-solid fa-xmark"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </aside>
+    </nav>
+    <!-- Hero section -->
+    <section class="hero-section">
+      <div class="hero-title">
+        <p>Liham cafe</p>
+        <p>Menu</p>
+      </div>
+    </section>
+
+    <!-- MAIN  -->
+
+    <main>
+      <div class="product-section">
+        <div class="categories-container">
+          <div class="categories-links">
+            <a href="#espresso" class="categories-link active">Espresso</a>
+            <a href="#fruit-tea" class="categories-link">Fruit Tea</a>
+            <a href="#non-coffee" class="categories-link">Non-Coffee</a>
+            <a href="#add-on" class="categories-link">Add On</a>
+            <a href="#others" class="categories-link">Others</a>
+          </div>
+        </div>
+
+        <section id="espresso">
+          <h3>Espresso</h3>
+          <div id="espresso-section" class="menu-grid"></div>
+        </section>
+
+        <section id="fruit-tea">
+          <h3>Fruit Tea</h3>
+          <div id="fruit-tea-section" class="menu-grid"></div>
+        </section>
+
+        <section id="non-coffee">
+          <h3>Non-Coffee</h3>
+          <div id="non-coffee-section" class="menu-grid"></div>
+        </section>
+
+        <section id="add-on">
+          <h3>Add On</h3>
+          <div id="add-on-section" class="menu-grid"></div>
+        </section>
+
+        <section id="others">
+          <h3>Others</h3>
+          <div id="others-section" class="menu-grid"></div>
+        </section>
+      </div>
+
+      <div class="cart">
+        <h2 class="cart-title">Your order</h2>
+        <select class="pickup-select">
+          <option value="pickup">Dine In</option>
+          <option value="delivery">Take Out</option>
+        </select>
+        <div class="cart-items" id="cartItems">
+          <!-- Cart items will be inserted here -->
+        </div>
+        <div>
+        </div>
+        <div class="total">
+          <span>TOTAL</span>
+          <span id="totalAmount">₱0.00</span>
+        </div>
+        <button class="checkout-button">Create order ›</button>
+
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Quick Links Section -->
+        <div class="footer__content">
+          <h3 class="footer__title">QUICK LINKS</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="menu.html" class="footer__link">Menu</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Store Hours Section -->
+        <div class="footer__content">
+          <h3 class="footer__title">STORE HOURS</h3>
+          <ul class="footer__links">
+            <li>
+              <span class="footer__link">Mon - Sat: 10:00am - 7:00pm</span>
+            </li>
+            <li><span class="footer__link">Sunday - Closed</span></li>
+          </ul>
+        </div>
+
+        <!-- Location Section -->
+        <div class="footer__content">
+          <h3 class="footer__title">LOCATION</h3>
+          <ul class="footer__links">
+            <li>
+              <a
+                href="https://maps.app.goo.gl/CqAnR19cAf9aoQ1j8"
+                class="footer__link"
+                >Barangay I, Sta, Cruz Street, Vinzons, Camarines Norte,
+                Philippines</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer__content">
+          <h3 class="footer__title">CONTACT US</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:liham.cafe.inc@outlook.com" class="footer__link"
+                >liham.cafe.inc@outlook.com</a
+              >
+            </li>
+          </ul>
+
+          <br />
+          <!-- Follow Section -->
+          <h3 class="footer__title">FOLLOW US</h3>
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com/lihamcafe"
+              class="footer__social-link"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@lihamcafeph"
+              class="footer__social-link"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+            <a
+              href="https://instagram.com/lihamcafe"
+              class="footer__social-link"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        &#169; Liham Cafe. All rights reserved. <br>Website developed by Devengers.
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
